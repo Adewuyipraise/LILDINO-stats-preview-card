@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        * {
+            box-sizing: border-box;
+            align-content: center;
+        }
+        
+        .box {
+            float: left;
+            width: 50%;
+            padding: 50px;
+            height: 400px;
+            width: 500px;
+        }
+        
+        .clearfix {
+            width: 1000px;
+            margin: 6% 10% 2% 10%;
+        }
+        
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        #box1 {
+            color: white;
+            text-align: left;
+            border-radius: 10px 0px 0px 10px;
+            padding-left: 5%;
+            background-color: #1c1938;
+        }
+        
+        #box2 {
+            background: url("images/image-header-desktop.jpg")no-repeat center;
+            border-radius: 0px 10px 10px 0px;
+            background-color: #a360d2;
+            background-blend-mode: multiply;
+            background-size: cover;
+        }
+        
+        .figures {
+            display: flex;
+            line-height: 5px;
+            margin-right: 5%;
+        }
+        
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        
+        @media screen and (max-width: 600px) {
+            .clearfix {
+                margin: auto;
+                width: auto;
+            }
+            .box {
+                height: auto;
+            }
+            #box1 {
+                color: white;
+                text-align: center;
+                border-radius: 0px 0px 40px 40px;
+                margin-top: 300px;
+                position: absolute;
+                height: 500px;
+                width: 400px;
+            }
+            #box2 {
+                border-radius: 20px 20px 0px 0px;
+                height: 300px;
+                width: 400px;
+                background-blend-mode: multiply;
+                background-size: cover;
+                /* z-index: 1; */
+                position: absolute;
+            }
+            .figures {
+                display: block;
+                line-height: 10px;
+                margin: auto;
+            }
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+                margin-top: 205%;
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clearfix">
+        <div class="box" id="box1">
+            <h1 style="font-size: 35px;"> Get <span style="color: #a360d2;"> insights </span> that help your business grow.</h1>
+            <p style="font-size: 15px;">Discover the benefits of data analytics and make <br> better decisions regarding revenue, customer <br> experience, and overall efficiency.
+            </p>
+            <div class="figures">
+                <div>
+                    <h3>10k+</h3>
+                    <p style="font-size: 15px;">COMPANIES</p>
+                </div>
+                <div>
+                    <h3>314</h3>
+                    <p style="font-size: 15px;">TEMPLATES</p>
+                </div>
+                <div>
+                    <h3>12M+</h3>
+                    <p style="font-size: 15px;">QUERIES</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" id="box2">
+            <!-- <img src="images/image-header-desktop.jpg" alt="image-header-desktop" style="border-radius: 0px 20px 20px 0px;"> -->
+        </div>
+    </div>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">LIL-DINO</a>.
+    </div>
+</body>
+
+</html>
